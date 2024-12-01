@@ -16,7 +16,7 @@ type User struct {
 
 func main() {
 	// Configure the PostgreSQL Connection
-	dsn := "host=localhost user=postgres password=01142912894 dbname=GoTest port=5432 sslmode=disable TimeZone=Asia/Shanghai"
+	dsn := "host=localhost user=postgres password=? dbname=GoTest port=5432 sslmode=disable TimeZone=Asia/Shanghai"
 
 	// Open the Database Connection
 	db, err := gorm.Open(postgres.Open(dsn), &gorm.Config{})
